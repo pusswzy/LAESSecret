@@ -12,7 +12,9 @@
 		0A5952DF1D800F3300A83D96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952DE1D800F3300A83D96 /* ViewController.m */; };
 		0A5952E21D800F3300A83D96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5952E01D800F3300A83D96 /* Main.storyboard */; };
 		0A5952E41D800F3300A83D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5952E31D800F3300A83D96 /* Assets.xcassets */; };
-		0A5952E71D800F3300A83D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5952E51D800F3300A83D96 /* LaunchScreen.storyboard */; };
+		0A5952F41D8012F300A83D96 /* AESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952F11D8012F300A83D96 /* AESCryptor.m */; };
+		0A5952F51D8012F300A83D96 /* NSData+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952F31D8012F300A83D96 /* NSData+Random.m */; };
+		0A5952FA1D80131B00A83D96 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952F81D80131B00A83D96 /* GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,14 @@
 		0A5952DE1D800F3300A83D96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A5952E11D800F3300A83D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A5952E31D800F3300A83D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A5952E61D800F3300A83D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A5952E81D800F3300A83D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5952F01D8012F300A83D96 /* AESCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCryptor.h; sourceTree = "<group>"; };
+		0A5952F11D8012F300A83D96 /* AESCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCryptor.m; sourceTree = "<group>"; };
+		0A5952F21D8012F300A83D96 /* NSData+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Random.h"; sourceTree = "<group>"; };
+		0A5952F31D8012F300A83D96 /* NSData+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Random.m"; sourceTree = "<group>"; };
+		0A5952F71D80131B00A83D96 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		0A5952F81D80131B00A83D96 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		0A5952F91D80131B00A83D96 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,13 @@
 		0A5952D61D800F3300A83D96 /* LAESSecret */ = {
 			isa = PBXGroup;
 			children = (
+				0A5952EE1D8012D200A83D96 /* lib */,
 				0A5952DA1D800F3300A83D96 /* AppDelegate.h */,
 				0A5952DB1D800F3300A83D96 /* AppDelegate.m */,
 				0A5952DD1D800F3300A83D96 /* ViewController.h */,
 				0A5952DE1D800F3300A83D96 /* ViewController.m */,
 				0A5952E01D800F3300A83D96 /* Main.storyboard */,
 				0A5952E31D800F3300A83D96 /* Assets.xcassets */,
-				0A5952E51D800F3300A83D96 /* LaunchScreen.storyboard */,
 				0A5952E81D800F3300A83D96 /* Info.plist */,
 				0A5952D71D800F3300A83D96 /* Supporting Files */,
 			);
@@ -77,6 +85,36 @@
 				0A5952D81D800F3300A83D96 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A5952EE1D8012D200A83D96 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0A5952F61D80130400A83D96 /* GTMBase64 */,
+				0A5952EF1D8012DB00A83D96 /* AES */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		0A5952EF1D8012DB00A83D96 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				0A5952F01D8012F300A83D96 /* AESCryptor.h */,
+				0A5952F11D8012F300A83D96 /* AESCryptor.m */,
+				0A5952F21D8012F300A83D96 /* NSData+Random.h */,
+				0A5952F31D8012F300A83D96 /* NSData+Random.m */,
+			);
+			name = AES;
+			sourceTree = "<group>";
+		};
+		0A5952F61D80130400A83D96 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				0A5952F71D80131B00A83D96 /* GTMBase64.h */,
+				0A5952F81D80131B00A83D96 /* GTMBase64.m */,
+				0A5952F91D80131B00A83D96 /* GTMDefines.h */,
+			);
+			name = GTMBase64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5952E71D800F3300A83D96 /* LaunchScreen.storyboard in Resources */,
 				0A5952E41D800F3300A83D96 /* Assets.xcassets in Resources */,
 				0A5952E21D800F3300A83D96 /* Main.storyboard in Resources */,
 			);
@@ -150,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5952DF1D800F3300A83D96 /* ViewController.m in Sources */,
+				0A5952FA1D80131B00A83D96 /* GTMBase64.m in Sources */,
 				0A5952DC1D800F3300A83D96 /* AppDelegate.m in Sources */,
+				0A5952F51D8012F300A83D96 /* NSData+Random.m in Sources */,
 				0A5952D91D800F3300A83D96 /* main.m in Sources */,
+				0A5952F41D8012F300A83D96 /* AESCryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,14 +204,6 @@
 				0A5952E11D800F3300A83D96 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A5952E51D800F3300A83D96 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A5952E61D800F3300A83D96 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +332,7 @@
 				0A5952ED1D800F3300A83D96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
