@@ -15,6 +15,8 @@
 		0A5952F41D8012F300A83D96 /* AESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952F11D8012F300A83D96 /* AESCryptor.m */; };
 		0A5952F51D8012F300A83D96 /* NSData+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952F31D8012F300A83D96 /* NSData+Random.m */; };
 		0A5952FA1D80131B00A83D96 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5952F81D80131B00A83D96 /* GTMBase64.m */; };
+		0A9C89AC1D82C0340083712E /* LocalAESSerectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C89AA1D82C0340083712E /* LocalAESSerectController.m */; };
+		0A9C89AD1D82C0340083712E /* LocalAESSerectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9C89AB1D82C0340083712E /* LocalAESSerectController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		0A5952F71D80131B00A83D96 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		0A5952F81D80131B00A83D96 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		0A5952F91D80131B00A83D96 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		0A9C89A91D82C0340083712E /* LocalAESSerectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAESSerectController.h; sourceTree = "<group>"; };
+		0A9C89AA1D82C0340083712E /* LocalAESSerectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAESSerectController.m; sourceTree = "<group>"; };
+		0A9C89AB1D82C0340083712E /* LocalAESSerectController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalAESSerectController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,9 @@
 				0A5952DB1D800F3300A83D96 /* AppDelegate.m */,
 				0A5952DD1D800F3300A83D96 /* ViewController.h */,
 				0A5952DE1D800F3300A83D96 /* ViewController.m */,
+				0A9C89A91D82C0340083712E /* LocalAESSerectController.h */,
+				0A9C89AA1D82C0340083712E /* LocalAESSerectController.m */,
+				0A9C89AB1D82C0340083712E /* LocalAESSerectController.xib */,
 				0A5952E01D800F3300A83D96 /* Main.storyboard */,
 				0A5952E31D800F3300A83D96 /* Assets.xcassets */,
 				0A5952E81D800F3300A83D96 /* Info.plist */,
@@ -175,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5952E41D800F3300A83D96 /* Assets.xcassets in Resources */,
+				0A9C89AD1D82C0340083712E /* LocalAESSerectController.xib in Resources */,
 				0A5952E21D800F3300A83D96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +199,7 @@
 				0A5952FA1D80131B00A83D96 /* GTMBase64.m in Sources */,
 				0A5952DC1D800F3300A83D96 /* AppDelegate.m in Sources */,
 				0A5952F51D8012F300A83D96 /* NSData+Random.m in Sources */,
+				0A9C89AC1D82C0340083712E /* LocalAESSerectController.m in Sources */,
 				0A5952D91D800F3300A83D96 /* main.m in Sources */,
 				0A5952F41D8012F300A83D96 /* AESCryptor.m in Sources */,
 			);
