@@ -71,17 +71,13 @@
 		0A5952D61D800F3300A83D96 /* LAESSecret */ = {
 			isa = PBXGroup;
 			children = (
+				0ABA121E1D8FC387003990D9 /* System */,
 				0A5952EE1D8012D200A83D96 /* lib */,
-				0A5952DA1D800F3300A83D96 /* AppDelegate.h */,
-				0A5952DB1D800F3300A83D96 /* AppDelegate.m */,
 				0A5952DD1D800F3300A83D96 /* ViewController.h */,
 				0A5952DE1D800F3300A83D96 /* ViewController.m */,
 				0A9C89A91D82C0340083712E /* LocalAESSerectController.h */,
 				0A9C89AA1D82C0340083712E /* LocalAESSerectController.m */,
 				0A9C89AB1D82C0340083712E /* LocalAESSerectController.xib */,
-				0A5952E01D800F3300A83D96 /* Main.storyboard */,
-				0A5952E31D800F3300A83D96 /* Assets.xcassets */,
-				0A5952E81D800F3300A83D96 /* Info.plist */,
 				0A5952D71D800F3300A83D96 /* Supporting Files */,
 			);
 			path = LAESSecret;
@@ -125,6 +121,18 @@
 			name = GTMBase64;
 			sourceTree = "<group>";
 		};
+		0ABA121E1D8FC387003990D9 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				0A5952DA1D800F3300A83D96 /* AppDelegate.h */,
+				0A5952DB1D800F3300A83D96 /* AppDelegate.m */,
+				0A5952E01D800F3300A83D96 /* Main.storyboard */,
+				0A5952E31D800F3300A83D96 /* Assets.xcassets */,
+				0A5952E81D800F3300A83D96 /* Info.plist */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,11 +159,12 @@
 		0A5952CC1D800F3300A83D96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "李昊泽";
 				TargetAttributes = {
 					0A5952D31D800F3300A83D96 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L5ZK43C8RV;
 					};
 				};
 			};
@@ -233,8 +242,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -277,8 +288,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -305,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L5ZK43C8RV;
 				INFOPLIST_FILE = LAESSecret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pusswzy.www.LAESSecret;
@@ -316,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L5ZK43C8RV;
 				INFOPLIST_FILE = LAESSecret/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pusswzy.www.LAESSecret;

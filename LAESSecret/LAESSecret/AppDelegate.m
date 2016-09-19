@@ -8,19 +8,29 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "AESCryptor.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+static NSString * const AESKEY = @"AES128KEY";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = rootNav;
     [self.window makeKeyAndVisible];
+    
+    //生成长度为128bit的AES秘钥
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    if ([userDefault objectForKey:AESKEY]) {
+        
+    } else {
+        NSData *AES128 = [AESCryptor generateRandom128BitAESKey];
+        [userDefault setObject:AES128 forKey:AESKEY];
+    }
     return YES;
 }
 
